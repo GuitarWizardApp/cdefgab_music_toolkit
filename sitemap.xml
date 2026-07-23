@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Replace REPLACE_WITH_SITE_URL with the published address,
-     e.g. https://username.github.io/cdefgab-site -->
+<!-- Published at https://guitarwizardapp.github.io/cdefgab_music_toolkit -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>REPLACE_WITH_SITE_URL/index.html</loc>
+    <loc>https://guitarwizardapp.github.io/cdefgab_music_toolkit/index.html</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>REPLACE_WITH_SITE_URL/guide.html</loc>
+    <loc>https://guitarwizardapp.github.io/cdefgab_music_toolkit/guide.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>REPLACE_WITH_SITE_URL/support.html</loc>
+    <loc>https://guitarwizardapp.github.io/cdefgab_music_toolkit/support.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>REPLACE_WITH_SITE_URL/privacy.html</loc>
+    <loc>https://guitarwizardapp.github.io/cdefgab_music_toolkit/privacy.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>

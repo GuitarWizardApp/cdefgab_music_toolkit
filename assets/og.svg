@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="CDEFGAB Music Toolkit">
+  <defs>
+    <radialGradient id="glow" cx="18%" cy="0%" r="70%">
+      <stop offset="0%" stop-color="#E0F500" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#E0F500" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="88%" cy="12%" r="55%">
+      <stop offset="0%" stop-color="#FF8C00" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#FF8C00" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="#0A0B0C"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect width="1200" height="630" fill="url(#glow2)"/>
+
+  <!-- neck -->
+  <g stroke="#26292D" stroke-width="2">
+    <path d="M80 470h1040"/><path d="M80 508h1040"/><path d="M80 546h1040"/>
+  </g>
+  <g stroke="#1E2124" stroke-width="2">
+    <path d="M300 450v116"/><path d="M520 450v116"/><path d="M740 450v116"/><path d="M960 450v116"/>
+  </g>
+  <!-- notes on the neck -->
+  <circle cx="190" cy="470" r="20" fill="#E0F500"/><circle cx="190" cy="470" r="20" fill="none" stroke="#FF8C00" stroke-width="5"/>
+  <circle cx="410" cy="508" r="18" fill="#1C1F22" stroke="#3A3F44" stroke-width="2"/>
+  <circle cx="630" cy="470" r="18" fill="#1C1F22" stroke="#3A3F44" stroke-width="2"/>
+  <circle cx="850" cy="546" r="18" fill="#1C1F22" stroke="#3A3F44" stroke-width="2"/>
+  <circle cx="1070" cy="508" r="20" fill="#E0F500"/><circle cx="1070" cy="508" r="20" fill="none" stroke="#FF8C00" stroke-width="5"/>
+
+  <!-- wordmark pill -->
+  <g>
+    <rect x="80" y="96" width="286" height="60" rx="30" fill="#16181A" stroke="#26292D" stroke-width="2"/>
+    <text x="112" y="136" font-family="SF Pro Text, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="3" fill="#E0F500">CDEFGAB</text>
+  </g>
+
+  <text x="80" y="262" font-family="SF Pro Display, Helvetica, Arial, sans-serif" font-size="78" font-weight="700" letter-spacing="-2.5" fill="#F2F4F5">Scales, modes and chords</text>
+  <text x="80" y="348" font-family="SF Pro Display, Helvetica, Arial, sans-serif" font-size="78" font-weight="700" letter-spacing="-2.5" fill="#F2F4F5">you can <tspan fill="#E0F500">see and play</tspan>.</text>
+
+  <text x="80" y="404" font-family="SF Pro Text, Helvetica, Arial, sans-serif" font-size="30" font-weight="500" fill="#9AA0A6">Guitar · Bass · Piano keys — with a microtonal tuner</text>
+</svg>

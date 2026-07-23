@@ -15,30 +15,26 @@ It runs as-is on **free GitHub Pages**.
 
 ## Publishing on GitHub Pages
 
-1. Create a new **public** repository (for example `cdefgab-site`).
-2. Copy everything from this folder into the repository root and push.
-3. Repo **Settings → Pages** → Source: *Deploy from a branch* → Branch: `main`, folder: `/ (root)`.
-4. Wait for the green check. The site appears at:
-   `https://<your-username>.github.io/<repo-name>/`
+Repository: <https://github.com/GuitarWizardApp/cdefgab_music_toolkit>
+Live at: **<https://guitarwizardapp.github.io/cdefgab_music_toolkit/>**
+
+1. Copy everything from this folder into the repository root (including the hidden `.nojekyll`) and push.
+2. Repo **Settings → Pages** → Source: *Deploy from a branch* → Branch: `main`, folder: `/ (root)`.
+3. Wait for the green check — the first deploy usually takes a minute or two.
 
 The `.nojekyll` file is intentional — it stops GitHub from running Jekyll, which would
 otherwise ignore some files and slow deploys.
 
-### After the first deploy
+## URLs already wired up
 
-Replace `REPLACE_WITH_SITE_URL` in `sitemap.xml` with the real address, and consider setting the
-same absolute URL in the `og:image` tags of each page (social previews need an absolute URL —
-relative paths work for the site itself but not for link previews on other platforms).
-
-## Wiring the URLs up
-
-| Where | What to set |
+| Where | Value |
 |---|---|
-| App Store Connect → App Information | Privacy Policy URL → `.../privacy.html` |
-| App Store Connect → Version | Support URL → `.../support.html`, Marketing URL → `.../index.html` |
-| iOS app source | `GuideViewController.userGuideURL` → `.../guide.html` |
+| App Store Connect → App Information | Privacy Policy URL → `https://guitarwizardapp.github.io/cdefgab_music_toolkit/privacy.html` |
+| App Store Connect → Version | Support URL → `.../support.html` · Marketing URL → `.../index.html` |
+| iOS app — `GuideViewController.userGuideURL` | `.../guide.html` ✅ set |
+| iOS app — `ProAccess.privacyURL` | `.../privacy.html` ✅ set |
 
-> Changing `userGuideURL` in the app requires a new build, so do it before uploading.
+Both app-side URLs live in the binary, so changing them later needs a new build.
 
 ## Assets
 
