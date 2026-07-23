@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CDEFGAB Music Toolkit — scales, modes and chords you can see and play</title>
+<meta name="description" content="An offline music-theory and practice app for guitar, bass and piano keys. Build scales and modes, find the mode behind your notes, learn chords with microphone checking, and tune with a microtonal tuner.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#0A0B0C">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CDEFGAB Music Toolkit">
+<meta property="og:description" content="Scales, modes and chords you can see and play — on guitar, bass and piano keys.">
+<meta property="og:image" content="assets/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="wordmark" href="index.html"><b>CDEFGAB</b></a>
+    <nav class="nav-links" aria-label="Main">
+      <a class="opt" href="#features">Features</a>
+      <a class="opt" href="#listen">Listening</a>
+      <a href="guide.html">Guide</a>
+      <a href="support.html">Support</a>
+      <button class="theme-toggle" type="button" aria-label="Switch appearance">☀</button>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Guitar · Bass · Piano keys</p>
+      <h1>Scales, modes and chords you can <span>see and play</span>.</h1>
+      <p class="lead">
+        Tap notes on the neck and CDEFGAB names the mode you just built and the chords hiding
+        inside it. The same scale re-maps instantly to guitar, bass or piano keys — the theory
+        stays, only the layout changes.
+      </p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="#features">See what it does</a>
+        <a class="btn btn-ghost" href="guide.html">Read the guide</a>
+      </div>
+
+      <!-- Fretboard motif: the app's neck, in pure SVG -->
+      <div class="fretboard reveal" aria-hidden="true">
+        <svg viewBox="0 0 900 200" width="900" height="200">
+          <g stroke="var(--line)" stroke-width="1.5">
+            <path d="M40 40h830"/><path d="M40 72h830"/><path d="M40 104h830"/>
+            <path d="M40 136h830"/><path d="M40 168h830"/>
+          </g>
+          <g stroke="var(--line)" stroke-width="1.5" opacity=".7">
+            <path d="M150 26v156"/><path d="M290 26v156"/><path d="M430 26v156"/>
+            <path d="M570 26v156"/><path d="M710 26v156"/><path d="M850 26v156"/>
+          </g>
+          <path d="M96 26v156" stroke="var(--muted)" stroke-width="4" stroke-linecap="round"/>
+          <g font-family="ui-monospace, SF Mono, Menlo, monospace" font-size="13" font-weight="700">
+            <circle cx="68" cy="40" r="15" fill="var(--accent)"/>
+            <circle cx="68" cy="40" r="15" fill="none" stroke="var(--orange)" stroke-width="3.5"/>
+            <text x="68" y="45" text-anchor="middle" fill="#0A0B0C">E</text>
+
+            <circle cx="220" cy="72" r="15" fill="var(--card-2)" stroke="var(--line)" stroke-width="1.5"/>
+            <text x="220" y="77" text-anchor="middle" fill="var(--text)">B</text>
+
+            <circle cx="360" cy="104" r="15" fill="var(--card-2)" stroke="var(--line)" stroke-width="1.5"/>
+            <text x="360" y="109" text-anchor="middle" fill="var(--text)">G</text>
+
+            <circle cx="500" cy="136" r="15" fill="var(--card-2)" stroke="var(--line)" stroke-width="1.5"/>
+            <text x="500" y="141" text-anchor="middle" fill="var(--text)">D</text>
+
+            <circle cx="640" cy="72" r="15" fill="var(--accent)"/>
+            <circle cx="640" cy="72" r="15" fill="none" stroke="var(--orange)" stroke-width="3.5"/>
+            <text x="640" y="77" text-anchor="middle" fill="#0A0B0C">E</text>
+
+            <circle cx="780" cy="168" r="15" fill="var(--card-2)" stroke="var(--line)" stroke-width="1.5"/>
+            <text x="780" y="173" text-anchor="middle" fill="var(--text)">A</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FEATURES ================= -->
+  <section id="features">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">What it does</p>
+        <h2>One neck, one keyboard, one theory.</h2>
+        <p class="lead">Everything works offline, with no account and no tracking.</p>
+      </div>
+
+      <div class="grid grid-3">
+        <article class="card reveal">
+          <div class="dot">◎</div>
+          <h3>Build any scale or mode</h3>
+          <p>Tap notes straight onto the fretboard. Set the tonic, read intervals at a glance, and transpose the pattern to any key without losing its shape.</p>
+        </article>
+        <article class="card reveal">
+          <div class="dot o">⇄</div>
+          <h3>Guitar, bass and keys</h3>
+          <p>Switch instruments and the same scale re-maps instantly. Relationships stay identical — only the layout under your fingers changes.</p>
+        </article>
+        <article class="card reveal">
+          <div class="dot s">⌕</div>
+          <h3>Find the mode</h3>
+          <p>Not sure what you just played? Matching Scales lists every scale and mode containing your notes, with suggested tonics and closest matches.</p>
+        </article>
+        <article class="card reveal">
+          <div class="dot">△</div>
+          <h3>Chords in context</h3>
+          <p>In chord mode each note shows which chords it belongs to. Pick a chip to see the shape, drag it along the neck for other voicings, and hear it.</p>
+        </article>
+        <article class="card reveal">
+          <div class="dot o">♪</div>
+          <h3>Microtonal tuner</h3>
+          <p>Chromatic and microtonal modes. Tune to any target note, hear its reference tone, and save custom string tunings for alternate setups.</p>
+        </article>
+        <article class="card reveal">
+          <div class="dot s">◷</div>
+          <h3>Rhythm that bites</h3>
+          <p>A sequencer and metronome with accents, polyrhythms and polymeters, plus a tap trainer that grades how tightly you actually play.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= INSTRUMENTS ================= -->
+  <section>
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">One idea, three layouts</p>
+        <h2>The same scale, wherever you play it.</h2>
+        <p class="lead">A mode isn’t three shapes to memorise — it’s one set of relationships. Switch the instrument and watch it re-map.</p>
+      </div>
+      <div class="grid grid-3">
+        <figure class="shot reveal">
+          <img src="assets/screens/chords-dorian-rings.png" alt="Dorian on the guitar neck with chord-membership rings" loading="lazy" decoding="async">
+          <figcaption style="padding:0 1rem 1rem">Guitar — with chord-membership rings.</figcaption>
+        </figure>
+        <figure class="shot reveal">
+          <img src="assets/screens/bass-dorian.png" alt="The same Dorian scale on bass" loading="lazy" decoding="async">
+          <figcaption style="padding:0 1rem 1rem">Bass — four strings, same theory.</figcaption>
+        </figure>
+        <figure class="shot reveal">
+          <img src="assets/screens/keys-ionian.png" alt="A scale shown on the piano keyboard" loading="lazy" decoding="async">
+          <figcaption style="padding:0 1rem 1rem">Keys — for when the neck isn’t the point.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LISTENING ================= -->
+  <section id="listen">
+    <div class="wrap">
+      <div class="split">
+        <div class="reveal">
+          <p class="eyebrow">The app listens</p>
+          <h2>Play the chord. It checks you.</h2>
+          <p>
+            The chord course teaches shapes one at a time. Play the chord and the microphone
+            listens: every note lights up green as it rings, and the lesson moves on by itself
+            once the chord sounds clean.
+          </p>
+          <ul class="ticks">
+            <li><strong>Per-note feedback</strong> — see exactly which string isn't ringing.</li>
+            <li><strong>Chord changes graded</strong> — switch between two chords in time, at a tempo you set.</li>
+            <li><strong>Always skippable</strong> — a quiet room never blocks your progress.</li>
+          </ul>
+          <p style="margin-top:1.4rem;color:var(--faint);font-size:.92rem">
+            Audio is analysed on your device in real time. Nothing is recorded, stored or sent anywhere.
+          </p>
+        </div>
+        <figure class="shot reveal">
+          <img src="assets/screens/chord-lesson-listening.png" alt="A Dm chord lesson: notes light up green as they ring" loading="lazy" decoding="async">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MATCHING ================= -->
+  <section>
+    <div class="wrap">
+      <div class="split rev">
+        <div class="reveal">
+          <p class="eyebrow">Matching</p>
+          <h2>From notes to a name.</h2>
+          <p>
+            Pick the notes you're hearing and the app works backwards: which scales contain them,
+            which tonic makes the most sense, and what to call the thing you stumbled onto.
+          </p>
+          <ul class="ticks">
+            <li><strong>Scale Library</strong> — browse and apply any scale or mode.</li>
+            <li><strong>Scale 2</strong> — hold two selections side by side and compare.</li>
+            <li><strong>Interval strip</strong> — read the distances, not just the dots.</li>
+          </ul>
+        </div>
+        <figure class="shot reveal">
+          <img src="assets/screens/circle-dorian.png" alt="The interval circle naming each degree of Dorian: tonic, supertonic, mediant and so on" loading="lazy" decoding="async">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= IN MOTION ================= -->
+  <section>
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">In motion</p>
+        <h2>Easier to watch than to explain.</h2>
+      </div>
+      <div class="grid grid-3">
+        <figure class="shot reveal">
+          <video src="assets/videos/preview-1.mp4" muted loop playsinline preload="none"
+                 poster="assets/screens/chords-dorian-rings.png" data-autoplay
+                 aria-label="App preview"></video>
+        </figure>
+        <figure class="shot reveal">
+          <video src="assets/videos/preview-2.mp4" muted loop playsinline preload="none"
+                 poster="assets/screens/harmony-progression.png" data-autoplay
+                 aria-label="App preview"></video>
+        </figure>
+        <figure class="shot reveal">
+          <video src="assets/videos/preview-3.mp4" muted loop playsinline preload="none"
+                 poster="assets/screens/pad-trainer.png" data-autoplay
+                 aria-label="App preview"></video>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LEARN ================= -->
+  <section>
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Learn</p>
+        <h2>Theory that connects to your hands.</h2>
+      </div>
+      <div class="grid grid-3">
+        <article class="card reveal">
+          <h3>Chord course</h3>
+          <p>A step-by-step path through chord shapes, with the microphone checking your sound and your chord changes.</p>
+        </article>
+        <article class="card reveal">
+          <h3>17 harmony lessons</h3>
+          <p>Short theory lessons with quizzes — keys, function, cadences — tied back to the neck instead of a textbook.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Chord reference</h3>
+          <p>Every chord, A to Z, with voicings you can drop straight onto the fretboard or the keyboard.</p>
+        </article>
+      </div>
+
+      <div class="split" style="margin-top:clamp(32px,5vw,64px)">
+        <figure class="shot reveal">
+          <img src="assets/screens/harmony-progression.png" alt="Circle of fifths with a chord progression being built" loading="lazy" decoding="async">
+          <figcaption style="padding:0 1rem 1rem">Circle of fifths, borrowed chords and progressions in one place.</figcaption>
+        </figure>
+        <figure class="shot reveal">
+          <img src="assets/screens/tuner-microtonal.png" alt="The microtonal tuner" loading="lazy" decoding="async">
+          <figcaption style="padding:0 1rem 1rem">Chromatic and microtonal tuning, down to the cent.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PRIVACY ================= -->
+  <section>
+    <div class="wrap">
+      <div class="card reveal" style="padding:clamp(26px,4vw,48px)">
+        <p class="eyebrow">Privacy</p>
+        <h2 style="margin-bottom:.4em">Nothing leaves your device.</h2>
+        <p class="lead" style="margin-bottom:1.4rem">
+          No account. No analytics. No third-party SDKs. No network requests at all —
+          the app simply doesn't talk to a server.
+        </p>
+        <ul class="ticks">
+          <li><strong>Microphone audio</strong> is analysed in memory and never recorded or transmitted.</li>
+          <li><strong>Your progress</strong> stays in local storage on the device.</li>
+          <li><strong>Works fully offline</strong>, on a plane or in a basement rehearsal room.</li>
+        </ul>
+        <div class="btn-row">
+          <a class="btn btn-ghost" href="privacy.html">Read the privacy policy</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <a class="wordmark" href="index.html"><b>CDEFGAB</b></a>
+      <p class="copy" style="margin-top:1rem">Music Toolkit for guitar, bass and keys.</p>
+    </div>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="guide.html">User Guide</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </div>
+  <div class="wrap" style="margin-top:2rem">
+    <p class="copy">© 2026 CDEFGAB. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="assets/app.js" defer></script>
+</body>
+</html>
