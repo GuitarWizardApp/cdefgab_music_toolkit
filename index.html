@@ -48,41 +48,12 @@
         <a class="btn btn-ghost" href="guide.html">Read the guide</a>
       </div>
 
-      <!-- Fretboard motif: the app's neck, in pure SVG -->
-      <div class="fretboard reveal" aria-hidden="true">
-        <svg viewBox="0 0 900 200" width="900" height="200">
-          <g stroke="var(--line)" stroke-width="1.5">
-            <path d="M40 40h830"/><path d="M40 72h830"/><path d="M40 104h830"/>
-            <path d="M40 136h830"/><path d="M40 168h830"/>
-          </g>
-          <g stroke="var(--line)" stroke-width="1.5" opacity=".7">
-            <path d="M150 26v156"/><path d="M290 26v156"/><path d="M430 26v156"/>
-            <path d="M570 26v156"/><path d="M710 26v156"/><path d="M850 26v156"/>
-          </g>
-          <path d="M96 26v156" stroke="var(--muted)" stroke-width="4" stroke-linecap="round"/>
-          <g font-family="ui-monospace, SF Mono, Menlo, monospace" font-size="13" font-weight="700">
-            <circle cx="68" cy="40" r="15" fill="var(--accent)"/>
-            <circle cx="68" cy="40" r="15" fill="none" stroke="var(--orange)" stroke-width="3.5"/>
-            <text x="68" y="45" text-anchor="middle" fill="#0A0B0C">E</text>
-
-            <circle cx="220" cy="72" r="15" fill="var(--card-2)" stroke="var(--line)" stroke-width="1.5"/>
-            <text x="220" y="77" text-anchor="middle" fill="var(--text)">B</text>
-
-            <circle cx="360" cy="104" r="15" fill="var(--card-2)" stroke="var(--line)" stroke-width="1.5"/>
-            <text x="360" y="109" text-anchor="middle" fill="var(--text)">G</text>
-
-            <circle cx="500" cy="136" r="15" fill="var(--card-2)" stroke="var(--line)" stroke-width="1.5"/>
-            <text x="500" y="141" text-anchor="middle" fill="var(--text)">D</text>
-
-            <circle cx="640" cy="72" r="15" fill="var(--accent)"/>
-            <circle cx="640" cy="72" r="15" fill="none" stroke="var(--orange)" stroke-width="3.5"/>
-            <text x="640" y="77" text-anchor="middle" fill="#0A0B0C">E</text>
-
-            <circle cx="780" cy="168" r="15" fill="var(--card-2)" stroke="var(--line)" stroke-width="1.5"/>
-            <text x="780" y="173" text-anchor="middle" fill="var(--text)">A</text>
-          </g>
-        </svg>
-      </div>
+      <!-- Hero video: the app doing the thing the headline claims -->
+      <figure class="shot hero-media reveal">
+        <video src="assets/videos/preview-2.mp4" muted loop playsinline preload="metadata"
+               poster="assets/screens/chord-lesson-listening.png" data-autoplay
+               aria-label="CDEFGAB in use: playing a chord while the app listens and checks it"></video>
+      </figure>
     </div>
   </section>
 
@@ -218,11 +189,6 @@
         <figure class="shot reveal">
           <video src="assets/videos/preview-1.mp4" muted loop playsinline preload="none"
                  poster="assets/screens/chords-dorian-rings.png" data-autoplay
-                 aria-label="App preview"></video>
-        </figure>
-        <figure class="shot reveal">
-          <video src="assets/videos/preview-2.mp4" muted loop playsinline preload="none"
-                 poster="assets/screens/harmony-progression.png" data-autoplay
                  aria-label="App preview"></video>
         </figure>
         <figure class="shot reveal">
